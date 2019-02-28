@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Samma", "Samma\Samma.pyproj", "{FD6BACC9-3C9C-460F-B848-D378EFDB4092}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD6BACC9-3C9C-460F-B848-D378EFDB4092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD6BACC9-3C9C-460F-B848-D378EFDB4092}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06ADF661-9203-48FF-988E-1D611DB0879F}
+	EndGlobalSection
+EndGlobal

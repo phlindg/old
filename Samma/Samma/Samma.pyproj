@@ -1,0 +1,101 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>fd6bacc9-3c9c-460f-b848-d378efdb4092</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Samma.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Samma</Name>
+    <RootNamespace>Samma</RootNamespace>
+    <InterpreterId>Global|ContinuumAnalytics|Anaconda36-64</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Backtest\backtest.py" />
+    <Compile Include="Backtest\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Datahandler\base.py" />
+    <Compile Include="Datahandler\nasdaq_csv.py" />
+    <Compile Include="Datahandler\__init__.py" />
+    <Compile Include="events.py" />
+    <Compile Include="Execution\bt_exe.py" />
+    <Compile Include="Execution\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Live\live.py" />
+    <Compile Include="Nordnet\priv.py" />
+    <Compile Include="Nordnet\pub.py" />
+    <Compile Include="Nordnet\__init__.py" />
+    <Compile Include="Portfolio\base.py" />
+    <Compile Include="Portfolio\bt_portfolio.py" />
+    <Compile Include="Portfolio\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Riskhandler\basic.py" />
+    <Compile Include="Riskhandler\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Samma.py" />
+    <Compile Include="Statistics\performance.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Statistics\statistics.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Statistics\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Strategies\buy_hold.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Strategies\tripple.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Strategies\ts.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Strategies\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda36-64" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Backtest\" />
+    <Folder Include="Datahandler\" />
+    <Folder Include="Datahandler\__pycache__\" />
+    <Folder Include="Execution\" />
+    <Folder Include="Live\" />
+    <Folder Include="Statistics\" />
+    <Folder Include="Riskhandler\" />
+    <Folder Include="Strategies\" />
+    <Folder Include="Nordnet\" />
+    <Folder Include="Portfolio\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Datahandler\__pycache__\nasdaq_csv.cpython-35.pyc" />
+    <Content Include="Datahandler\__pycache__\__init__.cpython-35.pyc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
